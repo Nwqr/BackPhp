@@ -20,6 +20,10 @@ class AppFixtures extends Fixture
             $todo[$i] = new Todo();
             $todo[$i]->setName($faker->name);
             $todo[$i]->setDescription($faker->text);
+            $todo[$i]->setDone(false);
+            //$todo[$i]->setPriority(1);
+
+
    
             $manager->persist($todo[$i]);
         }
